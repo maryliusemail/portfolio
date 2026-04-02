@@ -1,8 +1,28 @@
 body {
-  /* Set line height to 1.5 times the font size
-	   and use the OS’s UI font as the website font
-	 */
   font: 100%/1.5 system-ui;
   color: rgb(196, 118, 229);
+  margin: 0;
+  padding: 10px;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, textarea {
+  max-width: 100%;
+  width: 200px;
 }
