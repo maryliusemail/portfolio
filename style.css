@@ -1,15 +1,21 @@
 html{
   --color-accent: oklch(65% 50% 0);
+  --border-color: oklch(50% 10% 200 / 40%);
   accent-color: var(--color-accent);
+}
+
+html {
+  color-scheme: light dark;
 }
 
 body {
   font: 100%/1.5 system-ui;
-  color: rgb(196, 118, 229);
+  color: canvastext;
   margin: 0;
-  padding: 20px;
+  padding: 4rem 20px 20px;
   max-width: 100ch;
   margin-inline: auto;
+  position: relative;
   
 }
 
@@ -21,20 +27,22 @@ img {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: min(52rem, 100%);
+  margin: 0 auto 2rem;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
 }
 a{
-  flex: 1;
+  flex: 0 1 9rem;
   text-decoration: none;
   color: inherit;
   text-align: center;
-  padding: 0.5em;
-  padding-bottom: 10px;
+  padding: 0.5em 0;
+  padding-bottom: 0.75rem;
   
 }
 
@@ -42,12 +50,12 @@ a:hover{
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
   border-bottom-color: var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h)
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 a.current{
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: var(--border-color);
  
   
 }
@@ -97,8 +105,29 @@ article h2 {
 
 input,
 textarea,
-button {
+button,
+select {
   font: inherit;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: auto;
+  max-width: max-content;
+  grid-template-columns: none;
+  grid-column: auto;
+  font-size: 80%;
+  z-index: 1;
+}
+
+.color-scheme select {
+  width: auto;
+  flex: 0 0 auto;
 }
 
 
@@ -146,7 +175,7 @@ button{
 
 .cv section h2 {
   font-size: 1.5rem;
-  border-bottom: 2px solid oklch(80% 3% 200);
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 0.25em;
   margin-bottom: 1rem;
 }
@@ -154,9 +183,9 @@ button{
 .cv article {
   margin-bottom: 1.5rem;
   padding: 1rem;
-  border: 1px solid oklch(85% 3% 200);
+  border: 1px solid var(--border-color);
   border-radius: 0.75rem;
-  background-color: oklch(98% 0.01 0);
+  background-color: color-mix(in oklch, canvas, var(--color-accent) 8%);
 }
 
 .cv article h3 {
@@ -165,7 +194,7 @@ button{
 }
 
 .cv time {
-  color: #666;
+  color: color-mix(in oklch, canvastext, canvas 45%);
   font-style: italic;
 }
 
@@ -187,6 +216,6 @@ button{
 }
 
 .cv > p:first-of-type {
-  color: #666;
+  color: color-mix(in oklch, canvastext, canvas 45%);
   margin-top: 0;
 }
