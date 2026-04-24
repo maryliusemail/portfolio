@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Portfolio Website",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Personal portfolio website for DSC 106 featuring reusable JavaScript components, project templating from JSON, and live GitHub API stats."
+  },
+  {
+    "title": "CSCI 210 Final Project",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Final project repository for CSCI 210, built in Python and structured as a larger end-to-end course project."
+  },
+  {
+    "title": "League of Legends Gameplay Analysis",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "DSC 80 project analyzing gameplay data from League of Legends to explore patterns and player behavior."
+  },
+  {
+    "title": "Linked Out",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Web project focused on building a social or professional networking style experience with front-end development tools."
+  },
+  {
+    "title": "Anime Recommender",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Python recommendation project that suggests anime titles by modeling user preferences and similarity across shows."
+  },
+  {
+    "title": "Calorie Expenditure Prediction",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Machine learning project using supervised models to predict calorie expenditure from structured exercise and health data."
+  },
+  {
+    "title": "Wage Timer",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "C++ project that tracks time and wage-related calculations, combining core programming logic with practical utility."
+  },
+  {
+    "title": "Python Heart",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Small Python project exploring creative programming and visual output through code."
+  },
+  {
+    "title": "GitHub Pages Site",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "GitHub Pages website repository for publishing web content and experimenting with static site deployment."
+  },
+  {
+    "title": "Predicting Esports Match Outcomes",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Data science project focused on predicting match outcomes in esports using historical game and team performance data."
+  },
+  {
+    "title": "Image Processing and Classification Program",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Builds a basic image processing system and a simple machine learning classifier from scratch, including transformations and K-nearest neighbors image classification."
+  },
+  {
+    "title": "MTS Transit Visualization",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Visualizes San Diego's bus network, simulates bus arrivals and passenger wait times, and compares real transit patterns to theoretical models."
+  }
+]
