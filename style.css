@@ -93,6 +93,66 @@ button {
   gap: 1em;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-block: 2em;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  overflow: visible;
+}
+
+#projects-pie-plot path {
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+#projects-pie-plot path.selected {
+  fill: var(--color);
+}
+
+.legend {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 0.5em 1em;
+  margin: 0;
+  padding: 0.75em;
+  border: 1px solid var(--border-color);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
+.searchBar {
+  box-sizing: border-box;
+  width: 100%;
+  margin-block: 0 1em;
+}
+
 #profile-stats dl {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -121,6 +181,17 @@ article{
 
 article h2 {
   margin: 0;
+}
+
+article p {
+  margin: 0;
+}
+
+.project-year {
+  margin-top: 1em;
+  color: color-mix(in oklch, canvastext, canvas 35%);
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
 }
 
 input,

@@ -19,25 +19,25 @@
   },
   {
     "title": "Linked Out",
-    "year": 2025,
+    "year": 2024,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Web project focused on building a social or professional networking style experience with front-end development tools."
   },
   {
     "title": "Anime Recommender",
-    "year": 2025,
+    "year": 2023,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Python recommendation project that suggests anime titles by modeling user preferences and similarity across shows."
   },
   {
     "title": "Calorie Expenditure Prediction",
-    "year": 2025,
+    "year": 2024,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Machine learning project using supervised models to predict calorie expenditure from structured exercise and health data."
   },
   {
     "title": "Wage Timer",
-    "year": 2025,
+    "year": 2023,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "C++ project that tracks time and wage-related calculations, combining core programming logic with practical utility."
   },
@@ -49,7 +49,7 @@
   },
   {
     "title": "GitHub Pages Site",
-    "year": 2025,
+    "year": 2024,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "GitHub Pages website repository for publishing web content and experimenting with static site deployment."
   },
@@ -61,7 +61,7 @@
   },
   {
     "title": "Image Processing and Classification Program",
-    "year": 2025,
+    "year": 2023,
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Builds a basic image processing system and a simple machine learning classifier from scratch, including transformations and K-nearest neighbors image classification."
   },
