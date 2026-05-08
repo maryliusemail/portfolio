@@ -160,17 +160,122 @@ button {
   margin: 0 0 2rem;
 }
 
-#profile-stats dt {
+#profile-stats dt,
+.stats dt {
   grid-row: 1;
   font-size: 0.85rem;
   text-transform: uppercase;
   color: color-mix(in oklch, canvastext, canvas 45%);
 }
 
-#profile-stats dd {
+#profile-stats dd,
+.stats dd {
   grid-row: 2;
   margin: 0;
   font-size: 2rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.5rem 1rem;
+  margin: 0 0 2rem;
+}
+
+#chart {
+  margin-block: 1rem 2rem;
+}
+
+#chart svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#chart .gridlines line {
+  stroke: color-mix(in oklch, canvastext, canvas 85%);
+}
+
+#chart .gridlines path {
+  display: none;
+}
+
+#chart .tick text {
+  fill: color-mix(in oklch, canvastext, canvas 30%);
+}
+
+#chart .domain,
+#chart .tick line {
+  stroke: color-mix(in oklch, canvastext, canvas 55%);
+}
+
+#chart circle {
+  transition: 200ms;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#chart circle:hover,
+#chart circle:focus {
+  transform: scale(1.5);
+}
+
+#chart circle.selected {
+  fill: #ff6b6b;
+  fill-opacity: 1 !important;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8;
+  }
+}
+
+#chart .selection {
+  fill-opacity: 0.1;
+  stroke: canvastext;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 0.75rem;
+  margin: 0;
+}
+
+dl.info dt {
+  color: color-mix(in oklch, canvastext, canvas 45%);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+dl.info dd {
+  margin: 0;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  translate: 0.75rem 0.75rem;
+  z-index: 10;
+  max-width: min(24rem, calc(100vw - 2rem));
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: color-mix(in oklch, canvas, canvastext 4%);
+  box-shadow: 0 0.5rem 1.5rem color-mix(in oklch, canvastext, transparent 85%);
+  backdrop-filter: blur(0.5rem);
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
 }
 article{
   display: grid;

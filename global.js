@@ -1,5 +1,3 @@
-console.log('IT’S ALIVE!');
-
 export async function fetchJSON(url) {
   try {
     const response = await fetch(url);
@@ -57,6 +55,7 @@ let pages = [
   { url: "projects/", title: "Projects" },
   { url: "contact/", title: "Contact" },
   { url: "CV/", title: "Resume" },
+  { url: "meta/", title: "Meta" },
   { url: "https://github.com/maryliusemail", title: "GitHub" }
 ];
 
