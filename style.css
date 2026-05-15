@@ -25,6 +25,23 @@ img {
   
 }
 
+.project-link,
+.project-image-link {
+  display: block;
+  text-align: left;
+  padding: 0;
+}
+
+.project-image-link:hover,
+.project-link:hover {
+  border-bottom: 0;
+  background: none;
+}
+
+.project-image-link img {
+  display: block;
+}
+
 nav {
   display: flex;
   justify-content: center;
